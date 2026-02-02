@@ -16,7 +16,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1340px,
+  xxl: 1370px,
 );
 
 $grid-columns: 12;
@@ -120,7 +120,9 @@ $gutters: (
 
 @each $breakpoint, $dimension in $grid-breakpoints {
   $max-width: map.get($container-max-widths, $breakpoint);
-  $infix: if(sass($breakpoint == xs): ""; else: "-#{$breakpoint}");
+  $infix: if(
+    sass($breakpoint == xs): "" ; else: "-#{$breakpoint}",
+  );
 
   @include make-media-query($dimension, $breakpoint == xs) {
     .container {
