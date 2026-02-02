@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss:assets/css -w"
+    "sass": "sass scss:assets/css -w",
+    "migrate": "sass-migrator module --migrate-deps scss/base/_grid.scss && sass-migrator if-function --migrate-deps scss/base/_grid.scss"
   },
   "repository": {
     "type": "git",
