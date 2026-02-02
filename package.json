@@ -1,0 +1,21 @@
+{
+  "name": "htmlcss-project-07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss:assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minhhieu3012/htmlcss-project-07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minhhieu3012/htmlcss-project-07/issues"
+  },
+  "homepage": "https://github.com/Minhhieu3012/htmlcss-project-07#readme"
+}
