@@ -8,4 +8,10 @@ html.dark {
   --top-act-group-bg-color: #292e39;
   --top-act-group-shadow: #00000033;
   --top-act-group-separate: #ededf6;
+
+  // Dropdown
+  --dropdown-bg-color: #2f3441;
+  --dropdown-shadow-color: #171c2866;
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(16%) sepia(8%)
+    saturate(1558%) hue-rotate(186deg) brightness(96%) contrast(87%);
 }
