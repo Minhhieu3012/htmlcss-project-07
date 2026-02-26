@@ -13,6 +13,7 @@ html {
 
   @include abstracts.breakpoint(lg) {
     --header-bg-color: #fff;
+    --header-shadow-color: #ededf633;
   }
 
   // Dropdown
