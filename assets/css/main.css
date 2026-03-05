@@ -1380,6 +1380,7 @@ html {
   --product-card-bg: #fff;
   --filter-form-bg: #fff;
   --filter-form-shadow: #c8c8c866;
+  --filter-form-tag-bg: #f8f8fb;
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
@@ -2079,16 +2080,6 @@ html {
   font-size: 1.4rem;
   line-height: 1.43;
 }
-.filter__form-input {
-  width: 121px;
-  height: 36px;
-  padding: 0 12px;
-  border-radius: 6px;
-  border: 1px solid #d2d1d6;
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 1.43;
-}
 .filter__form-group {
   margin-top: 20px;
 }
@@ -2119,9 +2110,63 @@ html {
 .filter__form-slider::after {
   left: var(--max-value);
 }
+.filter__form-input, .filter__form-select-wrap {
+  border-radius: 6px;
+  border: 1px solid #d2d1d6;
+}
+.filter__form-input {
+  width: 121px;
+  height: 36px;
+  padding: 0 12px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.43;
+}
+.filter__form-select-wrap {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+.filter__form-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  min-width: var(--width, 108px);
+  height: calc(100% - 10px);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.43;
+  cursor: pointer;
+}
+.filter__form-select + .filter__form-select {
+  border-left: 1px solid #d2d1d6;
+}
+.filter__form-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.filter__form-tag {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #9e9da8;
+  background: var(--filter-form-tag-bg);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.43;
+  transition: color 0.25s;
+}
+.filter__form-tag:hover {
+  color: var(--text-color);
+}
 .filter__row {
   display: flex;
-  flex: 1;
+}
+.filter__separate {
+  width: 1px;
+  margin: 0 30px;
+  background: #eee;
 }
 
 .home__container {
