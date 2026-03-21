@@ -1,4 +1,8 @@
 .product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   padding: 16px;
   border-radius: 20px;
   box-shadow: 0px 20px 60px 10px var(--product-card-shadow);
@@ -44,6 +48,7 @@
   }
 
   &__row {
+    margin-top: auto;
     display: flex;
     align-items: center;
   }
