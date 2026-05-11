@@ -1364,6 +1364,11 @@ html.dark {
   --filter-form-shadow: #00000066;
   --filter-form-tag-bg: #171c28;
   --filter-form-arrow: var(--dropdown-arrow-color);
+  --auth-content-bg: #292e39;
+  --auth-intro-bg: #171c28;
+  --auth-intro-text-color: #b9babe;
+  --auth-heading-color: #b9babe;
+  --form-placeholder-color: #b9babe;
 }
 
 html {
@@ -1407,6 +1412,14 @@ html {
   --filter-form-shadow: #c8c8c866;
   --filter-form-tag-bg: #f8f8fb;
   --auth-content-bg: #fff;
+}
+@media (max-width: 767.98px) {
+  html {
+    --auth-intro-bg: #fff;
+  }
+}
+html {
+  --form-placeholder-color: #d2d1d6;
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
@@ -2545,6 +2558,11 @@ html {
 .form__group {
   margin-top: 30px;
 }
+@media (max-width: 767.98px) {
+  .form__group {
+    margin-top: 20px;
+  }
+}
 .form__group--inline {
   display: flex;
   align-items: center;
@@ -2596,7 +2614,7 @@ html {
   animation: shake 0.5s;
 }
 .form__input::placeholder {
-  color: #d2d1d6;
+  color: var(--form-placeholder-color);
 }
 @media (max-width: 767.98px) {
   .form__input {
@@ -2709,6 +2727,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 50px;
+  background: var(--auth-intro-bg);
 }
 .auth__intro-logo, .auth__intro-next {
   position: absolute;
@@ -2730,6 +2749,7 @@ html {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.45;
+  color: var(--auth-intro-text-color);
 }
 @media (max-width: 767.98px) {
   .auth__intro-text {
@@ -2760,20 +2780,27 @@ html {
   margin: 0 auto;
   padding: 50px 0;
 }
+@media (max-width: 767.98px) {
+  .auth__content-inner {
+    padding: 32px 0;
+  }
+}
 .auth__heading {
   margin-top: 50px;
   font-weight: 500;
   font-size: 3rem;
   line-height: 1.47;
+  color: var(--auth-heading-color);
 }
 @media (max-width: 767.98px) {
   .auth__heading {
+    margin-top: 40px;
     font-size: 2.2rem;
   }
 }
 .auth__desc {
   margin-top: 10px;
-  padding: 0 30px;
+  padding: 0 20px;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.47;
@@ -2810,6 +2837,12 @@ html {
   gap: 30px;
   margin-top: 50px;
 }
+@media (max-width: 767.98px) {
+  .auth__btn-group {
+    margin-top: 40px;
+    gap: 20px;
+  }
+}
 .auth__btn {
   width: 100%;
 }
@@ -2821,6 +2854,7 @@ html {
 }
 @media (max-width: 767.98px) {
   .auth__text {
+    margin-top: 40px;
     font-size: 1.6rem;
   }
 }
