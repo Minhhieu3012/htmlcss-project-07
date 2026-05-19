@@ -403,6 +403,7 @@
   &__checkbox {
     &-input {
       appearance: none;
+      cursor: pointer;
 
       &::before {
         content: url("../icons/checkbox-uncheck.svg");
