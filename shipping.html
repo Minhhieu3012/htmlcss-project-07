@@ -44,19 +44,19 @@
         <!-- Breadcrumbs -->
         <div class="checkout-container">
           <ul class="breadcrumbs checkout-page__breadcrumbs">
-            <li class="form__option">
+            <li>
               <a href="./" class="breadcrumbs__link">
                 Home
                 <img src="./assets/icons/arrow-right.svg" alt="" />
               </a>
             </li>
-            <li class="form__option">
+            <li>
               <a href="./checkout.html" class="breadcrumbs__link">
                 Checkout
                 <img src="./assets/icons/arrow-right.svg" alt="" />
               </a>
             </li>
-            <li class="form__option">
+            <li>
               <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Shipping </a>
             </li>
           </ul>
@@ -331,7 +331,9 @@
                   <span>Estimated Total</span>
                   <span>$201.65</span>
                 </div>
-                <a href="#!" class="cart-info__next-btn btn btn--primary btn--rounded">Continue to checkout</a>
+                <a href="./payment.html" class="cart-info__next-btn btn btn--primary btn--rounded"
+                  >Continue to checkout</a
+                >
               </div>
               <div class="cart-info">
                 <a href="#!">
@@ -362,14 +364,16 @@
     <div id="delete-confirm" class="modal modal--small hide">
       <!-- <button class="modal__close">&times;</button> -->
       <div class="modal__content">
-        <div class="modal__text">Lorem ipsum dolor sit amet consectetur.</div>
+        <p class="modal__text">Do you want remove this item from shopping cart?</p>
         <div class="modal__bottom">
-          <button class="btn btn--small btn--text modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+          <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#delete-confirm">
+            Cancel
+          </button>
           <button
-            class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
+            class="btn btn--small btn--danger btn--primary modal__btn btn--no-margin js-toggle"
             toggle-target="#delete-confirm"
           >
-            Confirm
+            Delete
           </button>
         </div>
       </div>
@@ -377,7 +381,7 @@
     </div>
 
     <!-- Modal: Add new shipping address -->
-    <div id="add-new-address" class="modal show" style="--content-width: 650px">
+    <div id="add-new-address" class="modal hide" style="--content-width: 650px">
       <!-- <button class="modal__close">&times;</button> -->
       <div class="modal__content">
         <form action="" class="form">
@@ -447,7 +451,9 @@
                 />
                 <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 
+                <!-- Select dialog  -->
                 <div id="city-dialog" class="form__select-dialog hide">
+                  <h2 class="form__dialog-heading d-none d-sm-block">City/District/Town</h2>
                   <button class="form__close-dialog d-none d-sm-block js-toggle" toggle-target="#city-dialog">
                     &times;
                   </button>
