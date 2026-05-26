@@ -36,7 +36,17 @@
     gap: 30px;
   }
 
+  &__back-arrow {
+    width: 50px;
+    padding-right: 20px;
+    position: relative;
+    top: 4px;
+  }
+
   &__heading {
+    display: flex;
+    align-items: center;
+
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 1.41;
